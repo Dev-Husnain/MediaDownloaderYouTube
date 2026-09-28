@@ -1,0 +1,6 @@
+jdk:
+  - openjdk21
+before_install:
+  - chmod +x ./gradlew
+install:
+  - ./gradlew :youtube:publishToMavenLocal -x test --no-daemon --no-configuration-cache

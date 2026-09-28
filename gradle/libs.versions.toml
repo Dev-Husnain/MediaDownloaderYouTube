@@ -1,0 +1,18 @@
+[versions]
+agp = "9.4.1"
+junit = "4.13.2"
+kotlinxCoroutines = "1.11.0"
+# The library this plugs into. A build against a locally published one uses whatever git describe
+# called it (mavenLocal is first in settings.gradle.kts); a release build uses a tag.
+mediaDownloader = "0.1.2"
+# GPLv3. This is the whole reason this repository exists apart from the library.
+newpipeExtractor = "v0.26.5"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+media-downloader = { module = "com.github.Dev-Husnain:MediaDownloaderLibrary", version.ref = "mediaDownloader" }
+newpipe-extractor = { module = "com.github.TeamNewPipe:NewPipeExtractor", version.ref = "newpipeExtractor" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
