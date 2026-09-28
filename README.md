@@ -168,6 +168,14 @@ nobody wants to maintain by hand, and the reason for the licence.
 **Size:** about **1.6 MB** on an app's APK — Rhino 1.27 MB (the javascript engine), the extractor
 802 KB, jsoup 513 KB, nanojson and rhino-engine 45 KB, once dexed and compressed.
 
+## Where the shape of this came from
+
+[`FINDINGS.md`](FINDINGS.md) is the working record: what YouTube actually served when it was
+measured on a device, why sniffing the player cannot work, why only H.264 and AAC are offered, what
+the iOS client promised and why it was dropped, and the four separate faults that stood between a
+feed card's button and the video behind it. Read it before changing anything here - most of what
+looks like a missing feature is a measurement.
+
 ## Building it
 
 ```bash
