@@ -1,5 +1,8 @@
 # MediaDownloaderYouTube
 
+[![JitPack](https://jitpack.io/v/Dev-Husnain/MediaDownloaderYouTube.svg)](https://jitpack.io/#Dev-Husnain/MediaDownloaderYouTube)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+
 A YouTube reader for [MediaDownloaderLibrary](https://github.com/Dev-Husnain/MediaDownloaderLibrary),
 built on [NewPipeExtractor](https://github.com/TeamNewPipe/NewPipeExtractor).
 
@@ -60,6 +63,9 @@ MediaDownloader.initialize(
     ),
 )
 ```
+
+The badge at the top of this page always shows this repository's newest release; if it reads
+higher than the line above, take the badge's number.
 
 That is the whole integration. It needs the library at **0.1.2 or newer** — that is the version
 where `MediaSource` and `MediaCollectionSource` exist. Everything in the
