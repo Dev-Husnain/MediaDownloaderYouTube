@@ -68,4 +68,8 @@ Deliberate, not oversights:
 
 - Commits and tags are authored by **Hussnain Mehdi** alone, over the SSH remote. No AI/assistant
   attribution or co-author lines in commit messages.
-- Releases are cut by git tag; nothing else sets the version (`gitDescribe` fills it locally).
+- Releases are cut by git tag; nothing else sets the version (`gitDescribe` fills it locally). Use
+  `tools/release.sh <version> "what changed"` - it refuses a dirty tree, a branch other than `main`
+  and an existing tag, tests and assembles, rewrites this add-on's coordinate wherever the docs
+  print it, then tags and pushes. A tag is final on JitPack: a bad release needs the next patch
+  number, not a re-cut. The library's coordinate in the README is a *minimum* and is left alone.
